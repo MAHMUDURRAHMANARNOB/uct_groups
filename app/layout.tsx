@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: "Licensed security services across Australia with 24/7 emergency response",
     type: "website",
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

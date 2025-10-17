@@ -70,6 +70,8 @@ export default function HomePage() {
     {
       icon: Shield,
       title: "VIP Bodyguards & Close Protection",
+      slug: "vip-bodyguards",
+      image: "/bodyguard-vip-protection.jpg",
       description:
         "Elite personal protection services for high-profile individuals, executives, and VIPs. Our trained operatives provide discreet, professional security with risk assessment and threat mitigation.",
       features: ["Risk Assessment", "Threat Analysis", "Discreet Protection"],
@@ -77,6 +79,8 @@ export default function HomePage() {
     {
       icon: Users,
       title: "Static Security Guards",
+      slug: "static-security-guards",
+      image: "/security-guard-patrol.jpg",
       description:
         "Professional on-site security personnel for commercial, retail, and residential properties. Licensed guards providing access control, surveillance, and incident response 24/7.",
       features: ["Access Control", "24/7 Monitoring", "Incident Response"],
@@ -84,6 +88,8 @@ export default function HomePage() {
     {
       icon: Car,
       title: "Mobile Patrol Services",
+      slug: "mobile-patrol-services",
+      image: "/security-guard-patrol.jpg",
       description:
         "Regular security patrols across multiple sites with GPS tracking and detailed reporting. Rapid response to alarms and security breaches across Sydney metropolitan area.",
       features: ["GPS Tracking", "Multi-Site Coverage", "Rapid Response"],
@@ -91,6 +97,8 @@ export default function HomePage() {
     {
       icon: ShoppingBag,
       title: "Retail Security",
+      slug: "retail-security",
+      image: "/retail-security-guard.jpg",
       description:
         "Specialized retail loss prevention and customer safety services. Trained personnel in theft deterrence, conflict resolution, and emergency procedures compliant with Australian retail standards.",
       features: ["Loss Prevention", "Customer Safety", "Theft Deterrence"],
@@ -98,6 +106,8 @@ export default function HomePage() {
     {
       icon: UserCheck,
       title: "Crowd Control",
+      slug: "crowd-control",
+      image: "/event-security-crowd.jpg",
       description:
         "Professional crowd management for events, venues, and public gatherings. Licensed personnel trained in de-escalation, emergency evacuation, and compliance with NSW event regulations.",
       features: ["Event Management", "De-escalation", "Emergency Protocols"],
@@ -105,6 +115,8 @@ export default function HomePage() {
     {
       icon: Camera,
       title: "CCTV Installation & Monitoring",
+      slug: "cctv-monitoring",
+      image: "/cctv-monitoring-room.jpg",
       description:
         "State-of-the-art surveillance systems with 24/7 monitoring. HD cameras, remote access, and intelligent analytics for comprehensive property protection and evidence collection.",
       features: ["HD Surveillance", "Remote Access", "Intelligent Analytics"],
@@ -112,6 +124,8 @@ export default function HomePage() {
     {
       icon: Bell,
       title: "Alarm Response Services",
+      slug: "alarm-response",
+      image: "/security-team-briefing.jpg",
       description:
         "Immediate response to security alarms with trained personnel dispatched within minutes. Verification, investigation, and coordination with emergency services as required.",
       features: ["Immediate Response", "Alarm Verification", "Emergency Coordination"],
@@ -119,6 +133,8 @@ export default function HomePage() {
     {
       icon: HardHat,
       title: "Construction Site Security",
+      slug: "construction-security",
+      image: "/construction-site-security.jpg",
       description:
         "Specialized security for construction sites protecting equipment, materials, and work areas. Prevention of theft, vandalism, and unauthorized access with compliance to WHS regulations.",
       features: ["Asset Protection", "Theft Prevention", "WHS Compliance"],
@@ -126,11 +142,36 @@ export default function HomePage() {
   ]
 
   const industries = [
-    { icon: Building2, name: "Corporate", description: "Office buildings, business parks, and corporate headquarters" },
-    { icon: ShoppingBag, name: "Retail", description: "Shopping centers, stores, and retail complexes" },
-    { icon: Factory, name: "Construction", description: "Building sites, infrastructure projects, and developments" },
-    { icon: Calendar, name: "Events", description: "Concerts, festivals, conferences, and public gatherings" },
-    { icon: Home, name: "Residential", description: "Apartment complexes, gated communities, and estates" },
+    {
+      icon: Building2,
+      name: "Corporate",
+      image: "/modern-corporate-office-building-security.jpg",
+      description: "Office buildings, business parks, and corporate headquarters",
+    },
+    {
+      icon: ShoppingBag,
+      name: "Retail",
+      image: "/retail-security-guard.jpg",
+      description: "Shopping centers, stores, and retail complexes",
+    },
+    {
+      icon: Factory,
+      name: "Construction",
+      image: "/construction-site-security.jpg",
+      description: "Building sites, infrastructure projects, and developments",
+    },
+    {
+      icon: Calendar,
+      name: "Events",
+      image: "/event-security-crowd.jpg",
+      description: "Concerts, festivals, conferences, and public gatherings",
+    },
+    {
+      icon: Home,
+      name: "Residential",
+      image: "/residential-apartment-complex-security-gate.jpg",
+      description: "Apartment complexes, gated communities, and estates",
+    },
   ]
 
   const testimonials = [
@@ -318,57 +359,74 @@ export default function HomePage() {
       {/* Hero Section */}
       <section id="hero" className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/5" />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl animate-pulse delay-1000" />
-        </div>
 
         <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6 animate-in fade-in slide-in-from-top-3 duration-700">
-              <Award className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Licensed & Certified Security Provider</span>
-            </div>
-
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance animate-in fade-in slide-in-from-top-5 duration-700 delay-100">
-              Professional Security Services Across Australia
-            </h1>
-
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 text-balance animate-in fade-in slide-in-from-top-7 duration-700 delay-200">
-              30+ Years of Combined Experience | Licensed & Trained Personnel | 24/7 Emergency Response
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-in fade-in slide-in-from-top-9 duration-700 delay-300">
-              <Button
-                size="lg"
-                onClick={() => setQuoteCalculatorOpen(true)}
-                className="w-full sm:w-auto text-lg px-8 py-6 font-semibold group"
-              >
-                Get Free Quote
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() => scrollToSection("services")}
-                className="w-full sm:w-auto text-lg px-8 py-6 font-semibold"
-              >
-                Our Services
-              </Button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 animate-in fade-in slide-in-from-bottom-5 duration-700 delay-500">
-              {stats.map((stat, index) => (
-                <div
-                  key={index}
-                  className="p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-all hover:shadow-lg"
-                >
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left side - Image and Logo */}
+            <div className="order-2 md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+              <div className="relative">
+                <div className="mb-8 flex justify-center md:justify-start">
+                  <img
+                    src="/uct-logo.png"
+                    alt="UCT Groups Security Services"
+                    className="h-32 w-auto animate-in fade-in zoom-in-50 duration-700 delay-100"
+                  />
                 </div>
-              ))}
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src="/security-team-briefing.jpg"
+                    alt="Professional UCT Groups Security Team"
+                    className="w-full h-[500px] object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - Text content */}
+            <div className="order-1 md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
+                <Award className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Licensed & Certified Security Provider</span>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+                Professional Security Services Across Australia
+              </h1>
+
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 text-balance leading-relaxed">
+                30+ Years of Combined Experience | Licensed & Trained Personnel | 24/7 Emergency Response
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
+                <Button
+                  size="lg"
+                  onClick={() => setQuoteCalculatorOpen(true)}
+                  className="w-full sm:w-auto text-lg px-8 py-6 font-semibold group"
+                >
+                  Get Free Quote
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  onClick={() => scrollToSection("services")}
+                  className="w-full sm:w-auto text-lg px-8 py-6 font-semibold"
+                >
+                  Our Services
+                </Button>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                {stats.map((stat, index) => (
+                  <div
+                    key={index}
+                    className="p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-all hover:shadow-lg"
+                  >
+                    <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
+                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -414,48 +472,147 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl">
-            <img
-              src="/security-team-briefing.jpg"
-              alt="Professional UCT Groups Security Team"
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <Card
-                key={index}
-                className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border hover:border-primary/50 group cursor-pointer"
-                onClick={() => {
-                  setSelectedService(service.title)
-                  setServiceModalOpen(true)
-                }}
-              >
-                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all">
-                  <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">{service.description}</p>
-                <div className="space-y-2 mb-4">
-                  {service.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span className="text-muted-foreground">{feature}</span>
+              <Link key={index} href={`/services/${service.slug}`}>
+                <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border hover:border-primary/50 group cursor-pointer h-full">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={service.image || "/placeholder.svg"}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-4 left-4">
+                      <div className="w-12 h-12 bg-primary/90 rounded-lg flex items-center justify-center">
+                        <service.icon className="w-6 h-6 text-primary-foreground" />
+                      </div>
                     </div>
-                  ))}
-                </div>
-                <Button
-                  variant="ghost"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                >
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Card>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-3">{service.description}</p>
+                    <div className="space-y-2 mb-4">
+                      {service.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-sm">
+                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                          <span className="text-muted-foreground">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <Button
+                      variant="ghost"
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </div>
+                </Card>
+              </Link>
             ))}
+          </div>
+
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <Badge variant="outline" className="mb-4">
+                Our Team in Action
+              </Badge>
+              <h3 className="text-2xl md:text-4xl font-bold text-foreground mb-4 text-balance">
+                Professional Security Personnel
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
+                Highly trained, licensed professionals protecting what matters most
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <img
+                  src="/event-security-crowd.jpg"
+                  alt="Event Security and Crowd Control"
+                  className="w-full h-[300px] object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Event Security</h3>
+                    <p className="text-white/90 text-sm">Professional crowd management and event protection</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <img
+                  src="/cctv-monitoring-room.jpg"
+                  alt="CCTV Monitoring and Surveillance"
+                  className="w-full h-[300px] object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">24/7 Monitoring</h3>
+                    <p className="text-white/90 text-sm">Advanced CCTV surveillance and alarm response</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <img
+                  src="/construction-site-security.jpg"
+                  alt="Construction Site Security"
+                  className="w-full h-[300px] object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Site Protection</h3>
+                    <p className="text-white/90 text-sm">Construction and industrial site security</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <img
+                  src="/retail-security-guard.jpg"
+                  alt="Retail Security Services"
+                  className="w-full h-[300px] object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Retail Security</h3>
+                    <p className="text-white/90 text-sm">Loss prevention and customer safety</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <img
+                  src="/bodyguard-vip-protection.jpg"
+                  alt="VIP Bodyguard Services"
+                  className="w-full h-[300px] object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">VIP Protection</h3>
+                    <p className="text-white/90 text-sm">Elite bodyguard and close protection services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <img
+                  src="/security-guard-patrol.jpg"
+                  alt="Mobile Patrol Services"
+                  className="w-full h-[300px] object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Mobile Patrols</h3>
+                    <p className="text-white/90 text-sm">Regular security patrols and rapid response</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="text-center mt-12">
@@ -715,9 +872,7 @@ export default function HomePage() {
             <Badge variant="outline" className="mb-4">
               Industries We Serve
             </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-              Specialized Security Across Multiple Sectors
-            </h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-4 text-balance">Industries We Served</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
               Tailored security solutions for diverse industries with sector-specific expertise and compliance.
             </p>
@@ -727,15 +882,27 @@ export default function HomePage() {
             {industries.map((industry, index) => (
               <Card
                 key={index}
-                className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border hover:border-primary/50 group"
+                className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border hover:border-primary/50 group"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:scale-110 transition-all">
-                  <industry.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
+                <div className="relative h-40 overflow-hidden">
+                  <img
+                    src={industry.image || "/placeholder.svg"}
+                    alt={industry.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-3 left-3">
+                    <div className="w-10 h-10 bg-primary/90 rounded-lg flex items-center justify-center">
+                      <industry.icon className="w-5 h-5 text-primary-foreground" />
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                  {industry.name}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{industry.description}</p>
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {industry.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{industry.description}</p>
+                </div>
               </Card>
             ))}
           </div>
