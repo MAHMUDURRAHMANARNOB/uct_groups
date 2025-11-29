@@ -202,7 +202,7 @@ export default function HomePage() {
   ]
 
   const stats = [
-    { value: "30+", label: "Years Combined Experience" },
+    { value: "10+", label: "Years Combined Experience" },
     { value: "500+", label: "Clients Protected" },
     { value: "24/7", label: "Emergency Response" },
     { value: "100%", label: "Licensed & Insured" },
@@ -269,8 +269,8 @@ export default function HomePage() {
                 <Phone className="w-4 h-4 text-destructive animate-pulse" />
                 <div>
                   <div className="text-xs text-muted-foreground">Emergency 24/7</div>
-                  <a href="tel:1300828476" className="text-sm font-bold text-destructive hover:underline">
-                    1300 UCT GRP
+                  <a href="tel:1300129456" className="text-sm font-bold text-destructive hover:underline">
+                    1300 129 456
                   </a>
                 </div>
               </div>
@@ -343,8 +343,8 @@ export default function HomePage() {
                 </Link>
                 <div className="px-4 py-3 bg-destructive/10 rounded-lg border border-destructive/20">
                   <div className="text-xs text-muted-foreground mb-1">Emergency 24/7</div>
-                  <a href="tel:1300828476" className="text-lg font-bold text-destructive">
-                    1300 UCT GRP
+                  <a href="tel:1300129456" className="text-lg font-bold text-destructive">
+                    1300 129 456
                   </a>
                 </div>
                 <Button onClick={() => setQuoteCalculatorOpen(true)} size="lg" className="mx-4">
@@ -374,9 +374,9 @@ export default function HomePage() {
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/security-team-briefing.jpg"
+                    src="/bodyguard.png"
                     alt="Professional UCT Groups Security Team"
-                    className="w-full h-[500px] object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -394,7 +394,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-8 text-balance leading-relaxed">
-                30+ Years of Combined Experience | Licensed & Trained Personnel | 24/7 Emergency Response
+                10+ Years of Combined Experience | Licensed & Trained Personnel | 24/7 Emergency Response
               </p>
 
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
@@ -444,8 +444,8 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <a href="tel:1300828476" className="text-2xl font-bold text-destructive hover:underline">
-                1300 UCT GRP
+              <a href="tel:1300129456" className="text-2xl font-bold text-destructive hover:underline">
+                1300 129 456
               </a>
               <Button variant="destructive" size="lg" className="font-semibold">
                 <Phone className="mr-2 w-5 h-5" />
@@ -460,9 +460,12 @@ export default function HomePage() {
       <section id="services" className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4">
-              Our Services
-            </Badge>
+            <Badge 
+            variant="outline" 
+            className="mb-4 text-sm py-2 px-4 rounded-full"
+              >
+                Our Services
+              </Badge>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">
               Comprehensive Security Solutions
             </h2>
@@ -684,7 +687,7 @@ export default function HomePage() {
                 About UCT Groups
               </Badge>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-                30+ Years of Combined Security Excellence
+                10+ Years of Combined Security Excellence
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 UCT Groups is a leading provider of professional security services across Australia. Our team of
@@ -980,8 +983,8 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground mb-1">Phone</div>
-                    <a href="tel:1300828476" className="text-muted-foreground hover:text-primary transition-colors">
-                      1300 UCT GRP (1300 828 476)
+                    <a href="tel:1300129456" className="text-muted-foreground hover:text-primary transition-colors">
+                      1300 129 456 (1300 828 476)
                     </a>
                     <div className="text-sm text-destructive font-semibold mt-1">24/7 Emergency Line</div>
                   </div>
@@ -1126,7 +1129,7 @@ export default function HomePage() {
             <div>
               <h3 className="font-bold mb-4">Contact</h3>
               <ul className="space-y-2 text-sm text-secondary-foreground/80">
-                <li>1300 UCT GRP</li>
+                <li>1300 129 456</li>
                 <li>info@uctgroups.com.au</li>
                 <li>Sydney, NSW</li>
                 <li className="pt-2">

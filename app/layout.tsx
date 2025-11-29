@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "UCT Groups - Professional Security Services Across Australia",
   description:
-    "30+ years of combined experience providing licensed security services including VIP protection, static guards, mobile patrols, CCTV, and more. 24/7 emergency response across Sydney.",
+    "10+ years of combined experience providing licensed security services including VIP protection, static guards, mobile patrols, CCTV, and more. 24/7 emergency response across Sydney.",
   keywords:
     "security services, security guards, VIP protection, mobile patrol, CCTV, Sydney security, licensed security, Australian security",
   openGraph: {
@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     description: "Licensed security services across Australia with 24/7 emergency response",
     type: "website",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
